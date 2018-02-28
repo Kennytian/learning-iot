@@ -1,6 +1,6 @@
 const {
   Board,
-  Led
+  Led,
 } = require('johnny-five');
 new Board().on('ready', () => {
   const led = new Led(11);
