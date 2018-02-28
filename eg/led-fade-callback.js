@@ -9,17 +9,17 @@ new Board().on('ready', () => {
   let fadeIndex = 0;
   const ledCount = leds.length;
 
-  function fadeNext(){
+  function fadeNext() {
     let candidateIndex = fadeIndex;
     leds[fadeIndex].fadeIn(timing);
 
     // Determine the next LED to fade
-    if(randomFade){
-      while(candidateIndex===fadeIndex){
-        candidateIndex = Math.round(Math.random()*(ledCount-1));
+    if (randomFade) {
+      while (candidateIndex === fadeIndex) {
+        candidateIndex = Math.round(Math.random() * (ledCount - 1));
       }
-    }else{
-      candidateIndex = (fadeIndex<ledCount -1)?fadeIndex+1:0;
+    } else {
+      candidateIndex = (fadeIndex < ledCount - 1) ? fadeIndex + 1 : 0;
     }
     fadeIndex = candidateIndex;
     leds[fadeIndex].fadeOut(timing, fadeNext);
