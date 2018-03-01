@@ -31,7 +31,7 @@
 
 ### 第一个程序
 
-1.  新建一个目录，比如：firstIoT， 在命令行下进入该目录，执行：`npm instll johnny-five`。
+1.  新建一个目录，比如：firstIoT，在命令行下进入该目录，执行：`npm instll johnny-five`。
 2.  在 firstIot 里新建一个文件`led-blink.js`，输入如下代码：
 
 ```javascript
