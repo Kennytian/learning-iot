@@ -13,6 +13,7 @@
     http://www.wch.cn/download/CH341SER_MAC_ZIP.html 。
 4.  安装 Arduino IDE 开发环境，下载地址：https://www.arduino.cc/en/main/software
 5.  打开 Arduino IDE, 选择: File > Examples > Firmata > StandardFirmataPlus，如图：
+
     ![StandardFirmataPlus](https://raw.githubusercontent.com/Kennytian/learning-iot/master/assets/standard_firemata_plus.jpg)
 6.  在 Arduino IDE 界面点击 "上传" 按钮.
 
