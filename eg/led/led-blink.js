@@ -1,9 +1,5 @@
-const {
-  Board,
-  Led
-} = require('johnny-five');
-new Board().on('ready', () => {
-  const led = new Led(13);
-  // "blink" the led in 500ms on-off phase periods
+const { Board, Led } = require('johnny-five');
+new Board().on('ready', function() {
+  var led = new Led(13);
   led.blink(500);
 });

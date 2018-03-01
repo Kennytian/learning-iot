@@ -1,7 +1,4 @@
-const {
-  Board,
-  Leds,
-} = require('johnny-five');
+const { Board, Leds } = require('johnny-five');
 new Board().on('ready', () => {
   const leds = new Leds([11, 10, 9, 6, 5, 3]);
   const timing = 250;
@@ -19,7 +16,7 @@ new Board().on('ready', () => {
         candidateIndex = Math.round(Math.random() * (ledCount - 1));
       }
     } else {
-      candidateIndex = (fadeIndex < ledCount - 1) ? fadeIndex + 1 : 0;
+      candidateIndex = fadeIndex < ledCount - 1 ? fadeIndex + 1 : 0;
     }
     fadeIndex = candidateIndex;
     leds[fadeIndex].fadeOut(timing, fadeNext);

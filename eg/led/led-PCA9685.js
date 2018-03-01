@@ -1,12 +1,9 @@
-const {
-  Board,
-  Led
-} = require('johnny-five');
+const { Board, Led } = require('johnny-five');
 new Board().on('ready', () => {
   const led = new Led({
     pin: process.argv[2] || 0,
     address: 0x40,
-    controller: 'PCA9685'
+    controller: 'PCA9685',
   });
 
   // address: The address of the shield.

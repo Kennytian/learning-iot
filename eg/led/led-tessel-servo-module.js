@@ -1,11 +1,8 @@
-const {
-  Board,
-  Led
-} = require('johnny-five');
+const { Board, Led } = require('johnny-five');
 const Tessel = require('tessel-io');
 
 const board = new Board({
-  io: new Tessel()
+  io: new Tessel(),
 });
 
 board.on('ready', () => {
@@ -13,7 +10,7 @@ board.on('ready', () => {
     pin: process.argv[2] || 1,
     address: 0x73,
     port: 'A',
-    controller: 'PCA9685'
+    controller: 'PCA9685',
   });
 
   // address: The address of the shield.

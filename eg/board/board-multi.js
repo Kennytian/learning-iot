@@ -1,8 +1,6 @@
-const {
-  Board,
-  Led
-} = require('johnny-five');
-const boards = new Board(['A', 'B']);
+const { Board, Led } = require('johnny-five');
+
+const boards = new Board([{ id: 'A', port: '/dev/tty.wchusbserial1410' }, { id: 'B', port: '/dev/tty.wchusbserial1411' }]);
 
 boards.on('ready', () => {
   const led = new Led({
@@ -11,7 +9,7 @@ boards.on('ready', () => {
   });
   led.blink();
 
-  this.each((board) => {
+  this.each(board => {
     if (board.id === 'B') {
       const led = new Led({
         pin: 13,

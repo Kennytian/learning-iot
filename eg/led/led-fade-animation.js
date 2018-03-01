@@ -1,7 +1,4 @@
-const {
-  Board,
-  Led
-} = require('johnny-five');
+const { Board, Led } = require('johnny-five');
 new Board().on('ready', () => {
   const led = new Led(11);
   led.fade({

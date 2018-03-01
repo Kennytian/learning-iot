@@ -1,14 +1,11 @@
-const {
-  Board,
-  Led,
-} = require('johnny-five');
+const { Board, Led } = require('johnny-five');
 new Board().on('ready', () => {
   const led = new Led(13);
   this.repl.inject({
     led,
   });
   led.blink();
-})
+});
 
 // >> led.stop() // to stop blinking
 // then

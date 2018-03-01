@@ -1,7 +1,10 @@
-const {
-  Board
-} = require('johnny-five');
+const { Board, Led } = require('johnny-five');
+
+function samplingInterval(ms) {
+  const led = new Led(13);
+  led.blink(ms);
+}
 
 new Board().on('ready', () => {
-  this.samplingInterval(1000),
+  samplingInterval(100);
 });

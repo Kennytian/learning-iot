@@ -1,13 +1,10 @@
-const {
-  Board,
-  Sensor
-} = require('johnny-five');
+const { Board, Sensor } = require('johnny-five');
 new Board().on('ready', () => {
   const sensor = new Sensor({
     pin: 'A0',
     custom: {
       a: 1,
-      b: 2
+      b: 2,
     },
   });
   console.log(sensor.custom.a);

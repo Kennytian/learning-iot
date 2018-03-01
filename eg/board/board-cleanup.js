@@ -1,13 +1,11 @@
-const {
-  Board,
-  Led
-} = require('johnny-five');
+const { Board, Led } = require('johnny-five');
 
-new Board().on('ready', () => {
+new Board().on('ready', function() {
   const led = new Led(13);
   led.on();
 
-  this.on('exit', () => {
-    led.off()
+  // enter .exit ture off the led
+  this.on('exit', function() {
+    led.off();
   });
 });

@@ -1,7 +1,4 @@
-const {
-  Board,
-  Led
-} = require('johnny-five');
+const { Board, Led } = require('johnny-five');
 const board = new Board();
 const led = null;
 
@@ -9,38 +6,39 @@ const led = null;
 const loop = true;
 
 // Create a simple demo sequence that calss various
-// five.Led methods with specified arguments and 
+// five.Led methods with specified arguments and
 // let it run for the given duration (defaults to 3 seconds).
 
-const demoSequence = [{
-  method: 'pulse',
-  args: [1000],
-  duration: 5000,
-}, {
-  method: 'strobe',
-  args: [500],
-  duration: 3000,
-}, {
-  method: 'fadeIn',
-  args: [
-    2000,
-    () => console.log('fadeIn complete!'),
-  ],
-  duration: 2500,
-}, {
-  method: 'fadeOut',
-  args: [
-    5000,
-    () => console.log('fadeOut complete!'),
-  ],
-  duration: 5500,
-}, {
-  method: 'brightness',
-  args: [10],
-  duration: 3000,
-}, {
-  method: 'off',
-}];
+const demoSequence = [
+  {
+    method: 'pulse',
+    args: [1000],
+    duration: 5000,
+  },
+  {
+    method: 'strobe',
+    args: [500],
+    duration: 3000,
+  },
+  {
+    method: 'fadeIn',
+    args: [2000, () => console.log('fadeIn complete!')],
+    duration: 2500,
+  },
+  {
+    method: 'fadeOut',
+    args: [5000, () => console.log('fadeOut complete!')],
+    duration: 5500,
+  },
+  {
+    method: 'brightness',
+    args: [10],
+    duration: 3000,
+  },
+  {
+    method: 'off',
+  },
+];
 
 function execute(step) {
   // Grab everything we need for this step

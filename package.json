@@ -1,9 +1,20 @@
 {
   "name": "learning-iot",
   "version": "1.0.0",
+  "author": "Kenny Tian",
   "dependencies": {
     "johnny-five": "^0.14.1",
     "temporal": "^0.6.0",
     "tessel-io": "^1.2.0"
-  }
+  },
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "prettier": "1.11.1"
+  },
+  "scripts": {
+    "format": "prettier --write '**/*.{js,md}'"
+  },
+  "pre-commit": [
+    "format"
+  ]
 }
