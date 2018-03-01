@@ -12,8 +12,8 @@
 3.  安装 Arduino 相应驱动，并重启电脑。具体驱动请自行搜索板子型号+当前操作系统，如：`ch340g mac`。 如果你买的是`Arduino UNO R3(CH340G)`板子，就下载
     http://www.wch.cn/download/CH341SER_MAC_ZIP.html 。
 4.  安装 Arduino IDE 开发环境，下载地址：https://www.arduino.cc/en/main/software
-5.  打开 Arduino IDE, 选择: File > Examples > Firmata > StandardFirmataPlus
-    * StandardFirmataPlus is available in Firmata v2.5.0 or greater
+5.  打开 Arduino IDE, 选择: File > Examples > Firmata > StandardFirmataPlus，如图：
+    ![StandardFirmataPlus](https://raw.githubusercontent.com/Kennytian/learning-iot/master/assets/standard_firemata_plus.jpg)
 6.  在 Arduino IDE 界面点击 "上传" 按钮.
 
 欢迎 QQ 群加入交流 [700434239](http://shang.qq.com/wpa/qunwpa?idkey=11cd472ee62461eed296856bfe97e15e02fc551c4ff476ec4eba16e6a9c27000)
