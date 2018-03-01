@@ -23,9 +23,11 @@
 
 2.  打开 Arduino IDE, 选择: File > Examples > Firmata > StandardFirmataPlus，如图：
 
-    ![StandardFirmataPlus](https://raw.githubusercontent.com/Kennytian/learning-iot/master/assets/standard_firemata_plus.jpg)
+    ![standard_firemata_plus](https://raw.githubusercontent.com/Kennytian/learning-iot/master/assets/standard_firemata_plus.jpg)
 
-3.  在 Arduino IDE 界面点击 "上传" 按钮.
+3.  在 Arduino IDE 界面点击 "上传" 按钮，如图：
+
+    ![upload_firemata](https://raw.githubusercontent.com/Kennytian/learning-iot/master/assets/upload_firemata.jpg)
 
 欢迎 QQ 群加入交流 [700434239](http://shang.qq.com/wpa/qunwpa?idkey=11cd472ee62461eed296856bfe97e15e02fc551c4ff476ec4eba16e6a9c27000)
 
