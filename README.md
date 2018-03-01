@@ -1,11 +1,11 @@
 # learning-iot
 
-#### 采购：
+### 采购：
 
 1.  Arduino UNO 开发板。刚开始学习只需买一块开发板即可，会送一根线，板载有 led 灯，淘宝一般在 30 块钱左右。
 2.  Arduino 电子元件。随着后期深入学习，就自然明白需要什么元件，再买不迟。
 
-#### 环境：
+### 环境：
 
 1.  Mac、Windows、Linux 电脑均可（以后我以 Mac 电脑为开发环境）。
 2.  安装 Node 4.3.0 及以上版本，建议安装 LTS 版，下载地址 https://nodejs.org/en/download/ 。
@@ -13,7 +13,7 @@
     http://www.wch.cn/download/CH341SER_MAC_ZIP.html 。
 4.  安装 Arduino IDE 开发环境，下载地址：https://www.arduino.cc/en/main/software
 
-#### 开发板：
+### 开发板：
 
 1.  将 USB 数据线把电脑与开发板连接后，正常情况下你会在 Arduino IDE 上看到你开发板的端口，如图：
 
@@ -28,6 +28,23 @@
 3.  在 Arduino IDE 界面点击 "上传" 按钮，如图：
 
     ![upload_firemata](https://raw.githubusercontent.com/Kennytian/learning-iot/master/assets/upload_firemata.jpg)
+
+### 第一个程序
+
+1.  新建一个目录，比如：firstIoT， 在命令行下进入该目录，执行：`npm instll johnny-five`。
+2.  在 firstIot 里新建一个文件`led-blink.js`，输入如下代码：
+
+```javascript
+const { Board, Led } = require('johnny-five');
+new Board().on('ready', function() {
+  var led = new Led(13);
+  led.blink(500);
+});
+```
+
+3.  在该目录下执行 `node led-blink.js`，如果程序不出错，就会出现下面的一闪一闪亮晶晶
+
+    ![led_blink](https://raw.githubusercontent.com/Kennytian/learning-iot/master/assets/led_blink.gif)
 
 欢迎 QQ 群加入交流 [700434239](http://shang.qq.com/wpa/qunwpa?idkey=11cd472ee62461eed296856bfe97e15e02fc551c4ff476ec4eba16e6a9c27000)
 
