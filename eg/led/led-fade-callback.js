@@ -1,5 +1,6 @@
 const { Board, Leds } = require('johnny-five');
-new Board().on('ready', () => {
+const board = new Board();
+board.on('ready', () => {
   const leds = new Leds([11, 10, 9, 6, 5, 3]);
   const timing = 250;
   const randomFade = true;

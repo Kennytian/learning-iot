@@ -1,6 +1,6 @@
 const { Board, Led, Sensor } = require('johnny-five');
-
-new Board().on('ready', function() {
+const board = new Board();
+board.on('ready', function() {
   var slider = new Sensor('A0');
   var led = new Led(11);
 

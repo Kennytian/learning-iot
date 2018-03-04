@@ -1,5 +1,6 @@
 const { Board, Led } = require('johnny-five');
-new Board().on('ready', () => {
+const board = new Board();
+board.on('ready', () => {
   // Create a standard `led` component
   // on a valid pwm pin
   const led = new Led(11);

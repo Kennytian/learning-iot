@@ -4,7 +4,7 @@ function samplingInterval(ms) {
   const led = new Led(13);
   led.blink(ms);
 }
-
-new Board().on('ready', () => {
+const board = new Board();
+board.on('ready', () => {
   samplingInterval(100);
 });

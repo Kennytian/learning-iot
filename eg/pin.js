@@ -1,7 +1,7 @@
 const { Board, Pin } = require('johnny-five');
 const temporal = require('temporal');
-
-new Board().on('ready', () => {
+const board = new Board();
+board.on('ready', () => {
   let events = [];
   const strobe = new Pin(13);
   temporal.loop(500, loop => {
