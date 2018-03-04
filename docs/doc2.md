@@ -1,6 +1,6 @@
 ## 机器人爱 JavaScript 系列二
 
-为什么这简单 5 行代码就能驱动Arduino 开发板上的灯闪亮呢?
+为什么这简单 5 行代码就能驱动 Arduino 开发板上的灯闪亮呢?
 
 ```javascript
 const { Board, Led } = require('johnny-five');
