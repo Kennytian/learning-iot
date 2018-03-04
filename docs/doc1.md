@@ -1,4 +1,4 @@
-## 机器人爱JavaScript系列一
+## 机器人爱 JavaScript 系列一
 
 ### 采购：
 

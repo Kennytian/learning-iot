@@ -1,8 +1,8 @@
-## 机器人爱JavaScript
+## 机器人爱 JavaScript
 
-[机器人爱JavaScript系列一](https://github.com/Kennytian/learning-iot/blob/master/docs/doc1.md)
+[机器人爱 JavaScript 系列一](https://github.com/Kennytian/learning-iot/blob/master/docs/doc1.md)
 
-[机器人爱JavaScript系列二](https://github.com/Kennytian/learning-iot/blob/master/docs/doc2.md)
+[机器人爱 JavaScript 系列二](https://github.com/Kennytian/learning-iot/blob/master/docs/doc2.md)
 
 ### 采购：
 
