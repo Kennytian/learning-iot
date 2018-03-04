@@ -1,6 +1,6 @@
 ## 机器人爱 JavaScript 系列二
 
-为什么这简单 5 行代码就  能驱动 Arduino 开发板上的灯闪亮呢?
+为什么这简单 5 行代码就能驱动Arduino 开发板上的灯闪亮呢?
 
 ```javascript
 const { Board, Led } = require('johnny-five');
@@ -14,13 +14,13 @@ board.on('ready', function() {
 
 ### johnny-five 库
 
-johnny-five 是一个 JavaScript 的机器人和物联网  平台库，可以用 JavaScript 来  驱动开发板。本文采用的是 Arduino UNO 开发板，但 johnny-five 支持  更多[其它  开发板](http://johnny-five.io/platform-support/)。
+johnny-five 是一个 JavaScript 的机器人和物联网平台库，可以用 JavaScript 来驱动开发板。本文采用的是 Arduino UNO 开发板，但 johnny-five 支持更多[其它开发板](http://johnny-five.io/platform-support/)。
 
 在 JavaScript 项目中，使用`npm install johnny-five`来安装，然后我们可以在`node_modules/johnny-five/lib/johnny-five.js` 看到关于它的源代码。
 
 ![j5_board](https://raw.githubusercontent.com/Kennytian/learning-iot/master/assets/j5_board.jpg)
 
-### Board 类
+### Board 类
 
 ```typescript
 export declare class Board {
@@ -50,7 +50,7 @@ export declare class Board {
 }
 ```
 
-该类主要作用是提供  操作开发板的一些方法，目前常用的有 on 方法，后面会逐步介绍：pinMode、wait、loop 和 samplingInterval
+该类主要作用是提供操作开发板的一些方法，目前常用的有 on 方法，后面会逐步介绍：pinMode、wait、loop 和 samplingInterval
 
 ### Led 类
 
@@ -76,7 +76,7 @@ export declare class Led {
 }
 ```
 
-Led 灯有如上一些方法，我们从名字能  大概看出来各自的  作用。 常用的方法有：
+Led 灯有如上一些方法，我们从名字能大概看出来各自的作用。常用的方法有：
 
 * on/off 开/关灯
 * blink/strobe (strobe 是 blink 的别名) 灯闪
