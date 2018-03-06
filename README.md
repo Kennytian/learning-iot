@@ -4,6 +4,12 @@
 
 [机器人爱 JavaScript 系列二](https://github.com/Kennytian/learning-iot/blob/master/docs/doc2.md)
 
+### 配置项目
+
+1.  git clone https://github.com/Kennytian/learning-iot.git
+2.  cd learning-iot & yarn
+3.  配置`WebStorm + nodemon`，在`Node parameters`里加入：`/usr/local/bin/nodemon --exec /usr/local/bin/node`
+
 ### 采购：
 
 1.  Arduino UNO 开发板。刚开始学习只需买一块开发板即可，会送一根线，板载有 led 灯，淘宝一般在 30 块钱左右。

@@ -5,7 +5,7 @@ const board = new Board({
   io: new Tessel(),
 });
 
-board.on('ready', () => {
+board.on('ready', function() {
   const led = new Led({
     pin: process.argv[2] || 1,
     address: 0x73,

@@ -1,8 +1,7 @@
 const { Board, Led } = require('johnny-five');
 const board = new Board();
-board.on('ready', () => {
-  // Create a standard 'led' component
-  // on a valid pwm pin
+board.on('ready', function() {
+  // Create a standard 'led' component on a valid pwm pin
   const led = new Led(11);
   // Instead of passing a time and rate, you can
   // pass any valid Animation() segment opts object

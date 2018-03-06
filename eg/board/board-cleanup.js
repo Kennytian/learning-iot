@@ -4,7 +4,7 @@ board.on('ready', function() {
   const led = new Led(13);
   led.on();
 
-  // enter .exit ture off the led
+  // enter .exit turn off the led
   this.on('exit', function() {
     led.off();
   });

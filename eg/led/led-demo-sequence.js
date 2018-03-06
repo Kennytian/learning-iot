@@ -1,6 +1,6 @@
 const { Board, Led } = require('johnny-five');
 const board = new Board();
-const led = null;
+let led = null;
 
 // Do we want the sequence to loop?
 const loop = true;

@@ -8,6 +8,7 @@
     "tessel-io": "^1.2.0"
   },
   "devDependencies": {
+    "nodemon": "^1.17.1",
     "pre-commit": "^1.2.2",
     "prettier": "1.11.1"
   },
