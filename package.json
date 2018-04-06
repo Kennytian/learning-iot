@@ -8,9 +8,11 @@
     "tessel-io": "^1.2.0"
   },
   "devDependencies": {
+    "jest": "^22.4.3",
     "nodemon": "^1.17.3",
     "pre-commit": "^1.2.2",
-    "prettier": "1.11.1"
+    "prettier": "1.11.1",
+    "sinon": "^4.5.0"
   },
   "scripts": {
     "format": "prettier --write '**/*.{js,md}'"
