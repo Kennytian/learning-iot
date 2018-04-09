@@ -26,7 +26,10 @@ describe('sinon test', () => {
   it('mock', () => {
     const name = 'yellow';
     const mock = sinon.mock(Person);
-    mock.expects('save').once().withArgs(name);
+    mock
+      .expects('save')
+      .once()
+      .withArgs(name);
     Person.save(name);
     mock.verify();
     mock.restore();
